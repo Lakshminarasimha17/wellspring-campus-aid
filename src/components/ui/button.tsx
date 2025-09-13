@@ -9,12 +9,17 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+        default: "bg-primary text-primary-foreground hover:bg-primary-hover transition-smooth",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 transition-smooth",
+        outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-smooth",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary-hover transition-smooth",
+        ghost: "hover:bg-accent hover:text-accent-foreground transition-smooth",
+        link: "text-primary underline-offset-4 hover:underline transition-smooth",
+        wellness: "bg-gradient-wellness text-primary-foreground hover:shadow-wellness transform hover:scale-105 transition-bounce font-semibold",
+        calm: "bg-wellness-sage text-foreground hover:bg-wellness-mint hover:shadow-soft transition-smooth",
+        hero: "bg-gradient-hero text-white hover:shadow-glow transform hover:scale-105 transition-bounce text-lg font-bold px-8 py-4",
+        success: "bg-success text-success-foreground hover:bg-success/90 transition-smooth",
+        warning: "bg-warning text-warning-foreground hover:bg-warning/90 transition-smooth",
       },
       size: {
         default: "h-10 px-4 py-2",
